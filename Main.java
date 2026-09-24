@@ -40,7 +40,7 @@ public class Main {
     public static double calculateElement(short cVal, float xVal) {
         // если эл == 11
         if (cVal == 11) {
-            return Math.cbrt(0.25) / (Math.sin(xVal) + 1.0);
+            return Math.cbrt(1.0 / (4.0 * (Math.sin(xVal) + 1.0)));;
         }
         // эл == 3, 5, 7
         else if (cVal == 3 || cVal == 5 || cVal == 7) {
