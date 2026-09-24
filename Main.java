@@ -52,7 +52,7 @@ public class Main {
             double p2 = Math.exp(Math.sin(xVal)) + Math.PI;
             double top = Math.pow(p1 * p2, 3);
 
-            // Защита от отрицательного числа под корнем четной степени (защита от NaN)
+            // защита от отрицательного знач под корнем четной степени 
             top = Math.abs(top);
 
             double bottom = Math.asin(Math.sin(Math.pow((xVal - 3.0) / 3.0, 3))) - 0.75;
